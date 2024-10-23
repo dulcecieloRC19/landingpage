@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayuda a cambiar una vida con tu donación para niños con fisura labio palatina.">
+    <title>Operación Sonrisa - Dona Ya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #008cba;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header img {
+            max-height: 50px;
+        }
+        header a {
+            background-color: #ff6600;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        section h2 {
+            color: #008cba;
+        }
+        .intro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .intro img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+        }
+        .benefits {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        .benefits h3 {
+            color: #ff6600;
+        }
+        .testimonials {
+            margin-top: 20px;
+            font-style: italic;
+            color: #555;
+        }
+        .form-donation {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+        }
+        .form-donation input, .form-donation button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            max-width: 400px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-donation button {
+            background-color: #008cba;
+            color: white;
+            cursor: pointer;
+        }
+        .trust {
+            background-color: #e9e9e9;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 40px;
+            text-align: center;
+        }
+        .trust img {
+            max-height: 50px;
+            margin: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="img/cropped-LOGO-OSP-256x47.webp" alt="Logotipo Operación Sonrisa">
+    <a href="#form-donacion">¡Dona Ya!</a>
+</header>
+
+<section class="intro" id="introduccion">
+    <h2>¡Cambia una vida hoy!</h2>
+    <p>Con tu donación, puedes transformar la vida de un niño con fisura labio palatina. Ayúdanos a devolverles la sonrisa y la oportunidad de un futuro mejor.</p>
+    <img src="img/IMG_8408-600x400.webp" alt="Imagen emotiva de un niño sonriendo">
+    <a href="#form-donacion" style="background-color: #ff6600; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Quiero ayudar</a>
+</section>
+
+<section class="benefits" id="beneficios-impacto">
+    <h2>Beneficios e Impacto</h2>
+    <p>Tu donación tiene un impacto directo en la vida de los niños. Con solo 150 soles puedes financiar una cirugía que les cambiará la vida.</p>
+    <div class="testimonials">
+        <h3>Testimonios:</h3>
+        <p>"Gracias a Operación Sonrisa, mi hijo puede sonreír de nuevo y tener una vida normal." - Ana, madre de paciente</p>
+        <p>"Ver a mi hija hablar y comer sin problemas es el mayor regalo que hemos recibido." - Luis, padre de paciente</p>
+    </div>
+</section>
+
+<section class="form-donation" id="form-donacion">
+    <h2>Haz tu Donación</h2>
+    <form action="procesar_donacion.php" method="POST">
+        <input type="text" name="nombre" placeholder="Tu Nombre" required>
+        <input type="email" name="email" placeholder="Tu Correo Electrónico" required>
+        <input type="number" name="cantidad" placeholder="Cantidad a Donar (S/)" required>
+        <button type="submit">Donar Ahora</button>
+    </form>
+</section>
+
+<section class="trust" id="garantias">
+    <h2>Garantías de Confianza</h2>
+    <p>Tu donación está protegida por nuestros sellos de seguridad:</p>
+    <img src="img/sello1.jpg" alt="Sello de seguridad 1">
+    <img src="img/sello3.png" alt="Sello de seguridad 2">
+    <img src="img/sello4.webp" alt="Sello de seguridad 3">
+    <p>Patrocinadores:</p>
+    <img src="img/ba 2.webp" alt="Patrocinador 1">
+    <img src="img/pa1.webp" alt="Patrocinador 2">
+</section>
+
+<footer>
+    <p>Síguenos en nuestras redes sociales:</p>
+    <a href="https://facebook.com">Facebook</a>
+    <a href="https://twitter.com">Twitter</a>
+    <a href="https://instagram.com">Instagram</a>
+    <p><a href="terminos-legales.html">Términos legales</a></p>
+</footer>
+
+</body>
+</html>
